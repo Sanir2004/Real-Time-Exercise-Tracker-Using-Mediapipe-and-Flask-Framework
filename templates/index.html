@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Workout Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        
+      
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <img class="logo" src="static/images/logo.png" alt="Trainify Logo" />
+            </h1>
+              
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#contact" class="contact-btn">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>AI Workout Tracker</h2>
+            <p>Level Up Your Workout Game</p>
+            <a href="#tracker" class="btn">Start Tracking</a>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <!-- Exercise Tracker Section -->
+    <section class="tracker" id="tracker">
+        <div class="container">
+            <div>
+                <div class="tracker_stat">
+                    <h2>Exercise Tracker</h2>
+
+                    <div class="exercise-selector">
+                        <label for="exercise"><strong>Choose an Exercise:</strong></label>
+                        <select id="exercise">
+                            <option value="bicep_curl">💪 Bicep Curl</option>
+                            <option value="squat">🏋️ Squat</option>
+                            <option value="pushup">🙌 Push-Up</option>
+                        </select>
+                    </div>
+
+                </div>
+                
+
+                <div class="stats">
+                    <h3>🔥 Reps: <span id="repCount">0</span></h3>
+                    <h3>⚡ Calories Burned: <span id="caloriesBurned">0.00</span></h3>
+                    <h3>📢 Feedback: <span id="feedback">Waiting...</span></h3>
+                </div>
+                
+                <button onclick="startExercise()">Start Exercise</button>
+                <button onclick="stopExercise()">Stop Exercise</button>
+
+                <button id="refreshStats">🔄 Refresh Stats</button>
+
+            </div>
+            
+            <div class="video-feed">
+                <img src="{{ url_for('video_feed') }}" width="640" height="480">
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- <section class="about" id="about">
+        <h2>Revolutionize Your Fitness</h2>
+        <div class="container about-content">
+            <p>AI-Trainer harnesses cutting-edge technology to elevate your fitness journey.
+            Our AI-powered system analyzes your movements in real-time, providing accurate rep counts, calorie estimations, and performance feedback.</p>
+            <p>Experience a smarter way to train with AI-driven insights tailored to your fitness goals.</p> -->
+            <!-- <a href="#contact" class="btn">Get in Touch</a> -->
+        <!-- </div>
+        <div class="about-image"></div>
+    </section> -->
+    
+    <section class="about" id="about">
+        <h2>Smarter Fitness Starts Here</h2>
+        <div class="container about-content">
+            <p>Say goodbye to guesswork. AI-Trainer empowers your workouts with real-time insights, turning every move into measurable progress.</p>
+            
+            <p>Using just your device’s camera, our AI analyzes your form, counts reps, estimates calories burned, and delivers feedback to help you improve — instantly.</p>
+            
+            <p>With adaptive goal tracking and intelligent recommendations, you're not just working out — you're evolving smarter, stronger, and faster.</p>
+    
+            <ul class="features-list">
+                <li>✔️ Real-time form analysis</li>
+                <li>✔️ Accurate calorie & rep tracking</li>
+                <li>✔️ Personalized feedback & goals</li>
+                <!-- <li>✔️ No wearables needed</li> -->
+            </ul>
+    
+            <!-- Optional CTA -->
+            <!-- <a href="#contact" class="btn">Get Started Today</a> -->
+        </div>
+        <div class="about-image"></div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <div class="contact-wrapper">
+            <div class="contact-form">
+              <h3>Send us a message</h3>
+              <form>
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+              </form>
+            </div>
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <p><strong>Email:</strong> sanir.ug22@nsut.ac.in</p>
+              <p><strong>Phone:</strong> +91 8766340329</p>
+              <p><strong>Address:</strong> Okhla Bird Sanctuary</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    
+
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+
+</html>
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Exercise Tracker</title>-->
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">-->
+<!--</head>-->
+<!--<body>-->
+<!--    <header>-->
+<!--        <h1>🏋️ Workout Tracker</h1>-->
+<!--    </header>-->
+
+<!--    <div class="container">-->
+<!--        <h2>🏆 Exercise Tracker</h2>-->
+
+<!--        <div class="exercise-selector">-->
+<!--            <label for="exercise"><strong>Choose an Exercise:</strong></label>-->
+<!--            <select id="exercise">-->
+<!--                <option value="bicep_curl">💪 Bicep Curl</option>-->
+<!--                <option value="squat">🏋️ Squat</option>-->
+<!--                <option value="pushup">🙌 Push-Up</option>-->
+<!--            </select>-->
+<!--        </div>-->
+
+<!--        <div class="stats">-->
+<!--            <h3>🔥 Reps: <span id="repCount">0</span></h3>-->
+<!--            <h3>⚡ Calories Burned: <span id="caloriesBurned">0.00</span></h3>-->
+<!--            <h3>📢 Feedback: <span id="feedback">Waiting...</span></h3>-->
+<!--        </div>-->
+
+<!--        <div class="video-feed">-->
+<!--            <img src="{{ url_for('video_feed') }}" width="640" height="480">-->
+<!--        </div>-->
+
+<!--        <button id="refreshStats">🔄 Refresh Stats</button>-->
+<!--    </div>-->
+
+<!--    <script src="{{ url_for('static', filename='script.js') }}"></script>-->
+<!--</body>-->
+<!--</html>-->
+
