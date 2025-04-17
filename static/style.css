@@ -1,0 +1,296 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+/* Header */
+
+.header {
+    background-color: #fff;
+    color: #000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #000;
+}
+.contact-btn {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    background-color: #f8f9fa; /* Light background */
+    min-height: 80vh;
+    gap: 50px;
+    /* Background Image Fix */
+    background-image: url('https://cdn.b12.io/client_media/3iuUtxkU/9c7604c8-03d0-11f0-92de-0242ac110002-jpeg-hero_image.jpeg');
+    background-size: cover;  /* Image pura section cover karegi */
+    background-position: center; /* Center me properly align hogi */
+    background-repeat: no-repeat; /* Image repeat na ho */
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Hero Image Styling */
+.hero-image {
+    width: 500px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Tracker Section */
+.tracker {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.exercise-selector label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.exercise-selector select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.stats {
+    margin-bottom: 20px;
+}
+
+.stats h3 {
+    margin-bottom: 10px;
+}
+
+.video-feed {
+    margin-top: 20px;
+}
+
+.video-feed img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+    background-color: #f8f9fa;
+    gap: 50px;
+}
+
+.about-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-image {
+    width: 400px;
+    height: 300px;
+    background-image: url('images/about.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    background-color: beige;*/
+/*    display: flex;*/
+/*    justify-content: flex-end; !* Move container to the right *!*/
+/*    align-items: center;*/
+/*    height: 100vh;*/
+/*    margin: 0;*/
+/*    padding-right: 50px; !* Adds some spacing from the right edge *!*/
+/*}*/
+
+/*header {*/
+/*    position: absolute;*/
+/*    top: 20px;*/
+/*    left: 50px;*/
+/*    font-size: 24px;*/
+/*    font-weight: bold;*/
+/*    color: #333;*/
+/*}*/
+
+/*.container {*/
+/*    background-color: #fff;*/
+/*    padding: 20px;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+/*    width: 80%;*/
+/*    max-width: 800px;*/
+/*}*/
+
+/*.exercise-selector label {*/
+/*    display: block;*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.exercise-selector select {*/
+/*    width: 100%;*/
+/*    padding: 10px;*/
+/*    font-size: 16px;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*.stats {*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.stats h3 {*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.video-feed {*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*.video-feed img {*/
+/*    border-radius: 10px;*/
+/*    max-width: 100%;*/
+/*}*/
+
+/*button {*/
+/*    display: block;*/
+/*    margin: 20px auto;*/
+/*    padding: 10px 20px;*/
+/*    font-size: 18px;*/
+/*    background-color: #007bff;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*button:hover {*/
+/*    background-color: #0056b3;*/
+/*}*/
