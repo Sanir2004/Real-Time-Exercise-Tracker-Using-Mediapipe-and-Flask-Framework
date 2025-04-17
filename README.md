@@ -35,3 +35,7 @@ This project is a real-time exercise monitoring web app built using **Flask**, *
    ```bash
    git clone https://github.com/your-username/exercise-tracker-flask.git
    cd exercise-tracker-flask
+
+   pip install -r requirements.txt
+
+   python app.py
